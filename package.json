@@ -1,13 +1,21 @@
 {
+  "homepage": "https://navith7777.github.io/navith",
+
   "name": "Portfolio-Website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start"
+}
+
+
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -39,4 +47,4 @@
     "three": "^0.153.0",
     "vite": "^4.3.9"
   }
-}
+
